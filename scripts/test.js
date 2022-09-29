@@ -1,5 +1,4 @@
-import { Yvrgs } from "../index.js";
-const { argv } = Yvrgs;
+import { vrgs } from '../index.js';
 
 /**
  * Simple test script for Yvrgs
@@ -11,6 +10,6 @@ const test = async (run, name, id) => {
 };
 
 (async () => {
-  await test(argv.run, argv.name, argv.id);
+  await test(vrgs.run, vrgs.name, vrgs.id);
   process.exit(0);
 })();
