@@ -12,7 +12,7 @@ export const parseArgs = (rawArgs) => {
       const cleanKey = key.slice(2);
 
       // If value has been provided, use it, else default value to true
-      cleanArgs[cleanKey] = value ? value : key;
+      cleanArgs[cleanKey] = value ? value : true;
     }
   })
   return cleanArgs;
