@@ -7,13 +7,12 @@ export const parseArgs = (rawArgs) => {
     const valid = /(--)\w/.test(arg);
     if (valid) {
       const [key, value] = arg.split('=');
+
+      // Disregard opening '--'
       const cleanKey = key.slice(2);
 
-      // If value has been provided, use it
-      if (value) cleanArgs[cleanKey] = value;
-
-      // If no value is provided, default the key's value to 'true'
-      else cleanArgs[cleanKey] = true;
+      // If value has been provided, use it, else default value to true
+      cleanArgs[cleanKey] = value ? value : key;
     }
   })
   return cleanArgs;
