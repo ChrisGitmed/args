@@ -3,7 +3,7 @@ export const parseArgs = (rawArgs) => {
   const cleanArgs = {};
 
   args.forEach((arg) => {
-    // Confirm the arg starts with '--' // TODO: This can be marked as 'valid': 'name--Chris'
+    // Confirm the arg starts with '--' // ! BUG: This can be marked as 'valid': 'name--Chris'
     const valid = /(--)\w/.test(arg);
     if (valid) {
       const [key, value] = arg.split('=');
