@@ -7,7 +7,6 @@ const { argv } = Other(process.argv);
 
 // dark-args
 import { argv } from 'dark-args';
-
 ```
 
 ---
@@ -39,5 +38,4 @@ const example = (run, name, id) => {
   Run!
   Hello Chris
   Less than 20
-
 ```
