@@ -1,11 +1,15 @@
 # dark-args
-A Node.js library to assist in parsing opstrings. Built because I was tired of typing two lines to access args with a popular npm package. vrgs only needs one.
+A Node.js library to assist in parsing opstrings. Built because I was tired of typing two lines to access args with a popular npm package. dark-args only needs one.
 
 ---
-#### Usage
+### Install
+```
+yarn add dark-args
+```
+### Usage
 ###### In Node.js
 ```
-import { vrgs } from '../index.js';
+import { argv } from 'dark-args';
 
 const example = async (run, name, id) => {
   if (run) console.log('Run!');
@@ -14,11 +18,10 @@ const example = async (run, name, id) => {
 };
 
 (async () => {
-  await test(vrgs.run, vrgs.name, vrgs.id);
+  await test(argv.run, argv.name, argv.id);
   process.exit(0);
 })();
 ```
-
 ###### In terminal
 ```
 λ node scripts/test.js --run  --name=Chris  --id=10
