@@ -18,13 +18,13 @@ const example = async (run, name, id) => {
 };
 
 (async () => {
-  await test(argv.run, argv.name, argv.id);
+  await example(argv.run, argv.name, argv.id);
   process.exit(0);
 })();
 ```
 ###### In terminal
 ```
-λ node scripts/test.js --run  --name=Chris  --id=10
+λ node scripts/example.js --run  --name=Chris  --id=10
   Run!
   Hello Chris
   Less than 20
