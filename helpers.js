@@ -4,8 +4,7 @@ export const parseArgs = (rawArgs) => {
 
   args.forEach((arg) => {
     // Confirm the arg starts with '--'
-    const valid = /^--\w/.test(arg);
-    if (valid) {
+    if (/^--\w/.test(arg)) {
       const [key, value] = arg.split('=');
 
       // Disregard opening '--' for key name
