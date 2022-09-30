@@ -1,6 +1,6 @@
 {
   "name": "dark-args",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,5 +18,7 @@
   "homepage": "https://github.com/ChrisGitmed/dark-args#readme",
   "type": "module",
   "description": "",
-  "files": ["index.js"]
+  "files": [
+    "index.js"
+  ]
 }
