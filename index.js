@@ -1,7 +1,7 @@
 import { parseArgs } from "./helpers.js";
 
-class Yvrgs {
+class Vrgs {
   static vrgs = parseArgs(process.argv);
 }
 
-export const { vrgs } = Yvrgs;
+export const { vrgs } = Vrgs;
