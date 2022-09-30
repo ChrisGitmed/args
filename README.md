@@ -9,6 +9,8 @@ yarn add dark-args
 ### Usage
 ###### In Node.js
 ```
+// example.js
+
 import { argv } from 'dark-args';
 
 const example = async (run, name, id) => {
@@ -24,7 +26,7 @@ const example = async (run, name, id) => {
 ```
 ###### In terminal
 ```
-λ node scripts/example.js --run  --name=Chris  --id=10
+λ node example.js --run  --name=Chris  --id=10
   Run!
   Hello Chris
   Less than 20
