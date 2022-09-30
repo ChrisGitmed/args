@@ -17,5 +17,6 @@
   },
   "homepage": "https://github.com/ChrisGitmed/dark-args#readme",
   "type": "module",
-  "description": ""
+  "description": "",
+  "files": ["index.js"]
 }
