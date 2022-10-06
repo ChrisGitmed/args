@@ -1,22 +1,27 @@
 # dark-args
 A Node.js library to assist in parsing opstrings. Built because I was tired of typing two lines to access args with a popular npm package. dark-args only needs one.
-```
-// Other Package
+
+----
+
+```javascript
+// Other package
 import Other from 'other-package';
 const { argv } = Other(process.argv);
 
 // dark-args
 import { argv } from 'dark-args';
 ```
-
 ---
+
 ### Install
 ```
 yarn add dark-args
 ```
+---
+
 ### Usage
 ###### In Node.js
-```
+```javascript
 // example.js
 
 import { argv } from 'dark-args';
